@@ -10,8 +10,6 @@ public class DemoApplication {
 	public static void main(String[] args) {
 		ConfigurableApplicationContext app = SpringApplication.run(DemoApplication.class, args);
 
-		Client cl = app.getBean(Client.class);
-		cl.printName();
 		CompClient cc = app.getBean(CompClient.class);
 		cc.printCC();
 	}

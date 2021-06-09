@@ -5,12 +5,11 @@ public class CompClient {
     void printCC(){
         System.out.println("I am compClient!");
     };
-   // @PostConstruct
-    public void initialize() {
+
+    public void init() {
         System.out.println("Creat compClient!");
     }
 
-    //@PreDestroy
     public void destroy(){
         System.out.println("Kill Bill!!");
     }
